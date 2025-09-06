@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form</title>
+  <meta name="description" content="well-structured HTML5 page with an enhanced form, lists, tables, and media for accessibility and SEO.">
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form</h1>
+    <nav>
+      <ul>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#list">Lists</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John smith" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required><br><br>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254 700 000000" pattern="[+0-9\s]{10,15}" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+          <legend>Account Information</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="15"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+          <p>Subscribe to:</p>
+          <input type="checkbox" id="news" name="subscribe" value="newsletter">
+          <label for="news">Newsletter</label><br>
+
+          <input type="checkbox" id="updates" name="subscribe" value="updates">
+          <label for="updates">Product Updates</label><br><br>
+
+          <p>Preferred Contact Method:</p>
+          <input type="radio" id="contact-email" name="contact" value="email" required>
+          <label for="contact-email">Email</label>
+          <input type="radio" id="contact-phone" name="contact" value="phone">
+          <label for="contact-phone">Phone</label><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+          <legend>Other Details</legend>
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" value="Kenya" readonly><br><br>
+
+          <label for="profile">Upload Profile Picture:</label>
+          <input type="file" id="profile" name="profile" accept="image/*"><br><br>
+        </fieldset>
+
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    
+    <section id="table">
+      <h2>Example Data Table</h2>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <caption>User Statistics</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subscription</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane@example.com</td>
+            <td>Newsletter</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>john@example.com</td>
+            <td>Updates</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+   
+    <section id="list">
+      <h2>Features of This Page</h2>
+      <ul>
+        <li>HTML5 Semantic Structure</li>
+        <li>Accessible Form with Validation</li>
+        <li>SEO-Friendly Metadata</li>
+        <li>Tables, Lists, and Media Examples</li>
+      </ul>
+    </section>
+
+ 
+    <section id="media">
+      <h2>Media Example</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300" alt="Placeholder example image">
+        <figcaption>Sample image with alt text for accessibility.</figcaption>
+      </figure>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+      </audio>
+      <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>@ 2025 Enhanced Form | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
