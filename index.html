@@ -3,75 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A simple demo webpage to show HTML5 structure, accessibility best practices, and beginner-friendly SEO principles.">
-  <title>HTML5 + Accessibility & SEO Basics</title>
+  <title>Responsive Layout Demo</title>
+  <meta name="description" content="A responsive HTML5 page demonstrating Flexbox, Grid, and media queries.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Introduction to Web Development</h1>
-    <nav aria-label="Main navigation">
+    <h1>Responsive Layout Demo</h1>
+    <nav class="navbar">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#accessibility">Accessibility</a></li>
-        <li><a href="#seo">SEO</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Page</h2>
-      <p>
-        Demonstration on how simple coding practices can improve user experience for both humans and search engines.
-      </p>
+    <!-- INTRO SECTION -->
+    <section id="intro" class="intro">
+      <h2>Welcome</h2>
+      <p>This page demonstrates how to use Flexbox, Grid, and media queries to build a responsive web layout.</p>
     </section>
 
-    <section id="accessibility">
-      <h2>Introduction to Web Accessibility </h2>
-      <article>
-        <h3>Why Accessibility?</h3>
-        <p>
-          Accessibility ensures websites can be used by <em>everyone</em>, including people with disabilities. 
-        </p>
-      </article>
-
-      <figure>
-        <img src="accessible-design.jpg" alt="Illustration showing inclusive web design" width="400">
-        <figcaption>An illustration of inclusive web design in action.</figcaption>
-      </figure>
+    <!-- FEATURES SECTION WITH FLEXBOX -->
+    <section id="features" class="features">
+      <h2>Features (Flexbox)</h2>
+      <div class="flex-container">
+        <div class="feature-box">Semantic HTML5</div>
+        <div class="feature-box">Responsive CSS</div>
+        <div class="feature-box">Flexbox Layout</div>
+        <div class="feature-box">Grid Layout</div>
+      </div>
     </section>
 
-    <section id="seo">
-      <h2>Introduction to Search Engine Optimisation</h2>
-      <article>
-        <h3>Why SEO Matters</h3>
-        <p> 
-          A clear structure and descriptive content improve ranking and visibility.
-        </p>
-      </article>
+    <!-- GALLERY SECTION WITH GRID -->
+    <section id="gallery" class="gallery">
+      <h2>Gallery (Grid)</h2>
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+      </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
       <h2>Contact Us</h2>
-      <p>If you’d like to learn more, reach out using the form below:</p>
-      <form aria-label="Contact form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="40" placeholder="Your message here..."></textarea><br><br>
-
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Web Basics | <a href="https://www.w3.org/WAI/" target="_blank">Accessibility Guidelines</a></p>
+    <p>@2025 Responsive Demo | All Rights Reserved</p>
   </footer>
 </body>
 </html>
